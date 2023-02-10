@@ -1,0 +1,210 @@
+body{
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    background-color: #009f44;
+    
+
+}
+
+header img{
+    margin: 0 auto;
+    padding: 30px;
+    max-height: 50px;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.numeros{
+    border-radius: 32px;
+    max-width: 580px;
+    margin: 32px auto;
+    background-color: #F4F6F6;
+    align-items: center;
+    padding: 16px;
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+.numeros .numero{
+    display: inline-block;
+    font-family: monospace;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #42494D;
+    background-color: #fff;
+    padding: 10px;
+    margin: 8px;
+    border: solid 1px #fff;
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    user-select: none;
+}
+
+.numeros .preenchido{
+    display: inline-block;
+    font-family: monospace;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+    background-color: #D3D7D9;
+    border: solid 1px #D3D7D9;
+    border-radius: 100%;
+    user-select: none;
+    color: #BDC3C7;
+    
+    
+}
+
+.numeros .selecionado{
+    display: inline-block;
+    font-family: monospace;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+    background-color: #009f44;
+    border: solid 1px #009f44;
+    border-radius: 100%;
+    user-select: none;
+    color: #fff;
+    
+}
+
+#megaSenaBotoes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#megaSenaBotoes button{
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin: 8px;
+    border: none;
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #009f44;
+    color: #fff;
+
+    
+}
+
+
+  #megaSenaJogosSalvos{
+    
+    width: 50%;
+    float: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px;
+    
+}
+  #megaSenaJogosSalvos p{
+    font-family: monospace;
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  #megaSenaJogosSalvos h1{
+    font-family: monospace;
+    text-align: center;
+    margin: 32px auto 0;
+
+  }
+
+  #megaSenaJogosSalvos ul{
+    padding: 32px;
+    display: inline-block;
+    width: 640px;
+
+
+  }
+
+  #megaSenaJogosSalvos li{
+    font-family: monospace;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 24px 32px;
+    display: inline-block;
+    width: 248px;
+    margin: 4px;
+    color: #fff;
+    background-color: #009f44;
+    border-radius: 32px;
+
+
+  }
+
+  #container {
+    width: 50%;
+    float: left;
+  }
+
+  @media screen and (max-width: 600px) {
+    #megaSenaBotoes button{
+        width: 100%;
+        height: 40px;
+        margin: 8px 0;
+    }
+
+    #megaSenaBotoes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 420px;
+        margin: 8px auto;
+    }
+    
+
+    #container{
+        margin: 32px 0 0;
+        width: 100%;
+    }
+
+    .numeros{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #megaSenaJogosSalvos{
+        display: inline-block;
+        width: calc(100% - 32px);
+    }
+
+    #megaSenaJogosSalvos ul{
+        padding: 32px;
+        display: inline-block;
+        width: 80%;
+      }
+
+      #megaSenaJogosSalvos li{
+        padding: 32px;
+        display:block;
+        width: 80%;;
+        
+      }
+  }
